@@ -1,0 +1,38 @@
+.tabs {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.tab-headers {
+  display: flex;
+  background-color: #f0f0f0;
+}
+
+.tab-header {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tab-header.active {
+  background-color: #fff;
+  border-bottom: 2px solid #007bff;
+}
+
+.tab-content {
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  animation: fade 0.3s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
